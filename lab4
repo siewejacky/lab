@@ -1,1 +1,59 @@
+Compte‑rendu
 
+Objectif du Lab
+L’objectif de ce lab était d’apprendre les bases du continuous testing dans un environnement NodeJS, en utilisant une API utilisateur déjà préparée.
+Les compétences visées étaient :
+installer et exécuter une application NodeJS connectée à Redis ;
+lancer les tests unitaires existants ;
+appliquer la méthode TDD (Test‑Driven Development) pour créer la fonctionnalité GET user ;
+écrire des tests unitaires et des tests API ;
+implémenter le contrôleur et la route correspondante.
+
+Applications dans le monde réel
+Développement piloté par les tests pour garantir la qualité du code dès le début.
+Tests automatisés intégrés.
+API robustes grâce à des tests unitaires et d’intégration.
+Ces pratiques sont utilisées dans les équipes DevOps, backend, microservices et QA.
+
+Étape du cycle DevOps concernée + justification
+Selon le schéma DevOps (Create → Plan → Package → Verify → Release → Configure → Monitor), ce lab se situe principalement dans les étapes :
+Create
+Técriture du code (tests + contrôleur + route).
+C’est la phase où la fonctionnalité est conçue et développée.
+Verify
+C’est l’étape centrale de ce lab :
+exécution des tests existants ;
+écriture de nouveaux tests ;
+validation du comportement de l’API ;
+
+Le lab est donc majoritairement un travail de vérification continue, cœur du continuous testing.
+
+
+Problèmes rencontrés et résolution
+Problème 1 — Redis ne démarrait pas
+Message d’erreur :  
+Could not connect to Redis on 127.0.0.1:6379
+Analyse :  
+Le serveur Redis n’était pas lancé ou tournait sur un autre port.
+Résolution :
+Vérification du serveur :
+Windows : lancement manuel de redis-server.exe
+Test avec :
+Ressources consultées :  
+Documentation Redis (installation + quickstart).
+Résultat :  
+Redis fonctionnel → l’application NodeJS a pu se connecter.
+
+ Finalité du Lab
+Objectif atteint
+Le lab est réussi car :
+l’application a été installée et exécutée ;
+les tests existants ont été lancés ;
+la fonctionnalité GET user a été développée en suivant strictement le TDD ;
+les tests unitaires et API ont été écrits et validés ;
+
+Ce que ce lab a permis de comprendre :
+comment intégrer des tests dans un workflow DevOps ;
+comment Redis interagit avec une API NodeJS ;
+comment écrire des tests avant le code (TDD) ;
+comment garantir la qualité logicielle via la phase Verify du cycle DevOps.
