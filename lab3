@@ -1,0 +1,42 @@
+Lab 3 — Compte‑rendu c
+L’objectif de ce lab était de découvrir et manipuler les fonctionnalités essentielles de Git et GitHub, à travers GitHub Desktop puis la ligne de commande.
+Les compétences visées incluaient :
+création et clonage d’un dépôt Git ;
+création et navigation entre branches ;
+modification de fichiers, commits et push ;
+gestion de conflits lors d’un merge ;
+reproduction des mêmes opérations en CLI pour comprendre le fonctionnement interne de Git.
+
+Ce lab etait poour etre autonome sur les bases du versionnement collaboratif.
+
+Applications dans le monde réel
+Les compétences travaillées dans ce lab sont utilisées quotidiennement  :
+Travail collaboratif sur un même projet  ;
+Gestion de versions pour suivre l’évolution du code ;
+Branches de développement pour isoler des fonctionnalités ;
+Pull requests et merges pour valider du code ;
+
+ Étape du cycle DevOps 
+Ce lab se situe principalement dans les étapes Create, Plan et Verify du cycle DevOps..
+
+Justification :
+Create :
+La création du dépôt Git, des branches et des premiers fichiers correspond directement à la phase Create, où l’on initialise et structure le code source.
+Plan :
+La gestion des branches, la collaboration entre membres du groupe et l’organisation du workflow Git relèvent de la phase Plan, car on définit comment les contributions seront intégrées et synchronisées.
+Verify :
+La résolution de conflits, et la vérification du code après chaque opération correspondent à la phase Verify, où l’on s’assure que les modifications sont cohérentes et fonctionnelles.
+
+ Problèmes rencontrés et résolution
+Finalité du Lab
+Objectif atteint
+Les objectifs sont remplis car :
+un dépôt a été créé et cloné ;
+des branches ont été créées et manipulées ;
+des commits et push ont été effectués ;
+un conflit a été généré puis résolu .
+
+Ce que le lab a permis de comprendre :
+la logique fondamentale de Git (commits, branches, merges) ;
+l’importance de la collaboration et de la gestion de conflits ;
+la place de Git dans un workflow DevOps.
