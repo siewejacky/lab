@@ -1,1 +1,45 @@
+Compte‑rendu – Lab : Containers with Docker
 
+Objectif du lab
+Installer Docker et vérifier son fonctionnement.
+Construire une image Docker à partir d’un Dockerfile.
+Exécuter un conteneur avec différentes options (ports, détachement, logs…).
+Publier une image sur Docker Hub et la partager.
+Construire et exécuter une application multi‑conteneurs avec Docker Compose.
+
+
+ Possible application dans le monde réel
+Déployer des microservices isolés et reproductibles.
+Standardiser les environnements de développement pour éviter le fameux “ça marche sur ma machine”.
+Automatiser les pipelines CI/CD (build → test → push → deploy).
+
+Étape dans le cycle DevOps – Justification
+Le TP couvre les étapes suivantes du cycle DevOps :
+CREATE – écriture / modification du code.
+VERIFY – tests locaux via docker run, logs, accès navigateur.
+PACKAGE – construction des images Docker (docker build).
+RELEASE – publication sur Docker Hub (docker push).
+CONFIGURE – orchestration multi‑conteneurs avec Docker Compose.
+MONITOR – observation des logs et du comportement des conteneurs.
+Problèmes rencontrés et résolution
+1. Erreur : Docker Desktop non détecté / service non lancé
+Symptôme : docker: Cannot connect to the Docker daemon
+Analyse : Le daemon Docker n’était pas démarré.
+Résolution :
+Lancer Docker Desktop manuellement.
+Vérifier avec docker info.
+
+2. Erreur lors du build : fichiers non trouvés
+Symptôme : COPY failed: file not found in build context
+Analyse : Le build context n’était pas le bon dossier.
+Résolution :
+Se placer dans lab/tp-docker
+Refaire : docker build -t tp-docker .
+
+
+Finalité du Lab – Objectif atteint ?
+Oui, l’objectif est rempli car Docker est installé et testé avec succès.
+Une image Docker a été construite à partir d’un Dockerfile.
+Le conteneur a été exécuté avec mapping de ports, logs, détachement.
+Une application multi‑conteneurs (Node.js + Redis) a été construite et exécutée via Docker Compose.
+Ce lab permet de maîtriser les fondamentaux pratiques de Docker et Docker Compose.
